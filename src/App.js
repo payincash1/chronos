@@ -242,3 +242,23 @@ function App() {
 }
 
 export default App;
+
+const EvidencePanel = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{marginTop: 24, borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: 16}}>
+      <div onClick={() => setOpen(!open)} style={{cursor: 'pointer', color: 'rgba(212,175,55,0.6)', fontSize: 13}}>
+        {open ? '▼' : '▶'} 评分方法论与文献依据
+      </div>
+      {open && (
+        <div style={{marginTop: 12, fontSize: 12, color: 'rgba(232,230,227,0.5)', lineHeight: 1.8}}>
+          <p><strong>核心算法：</strong>基于 Levine ME 等提出的 Phenotypic Age 框架（Aging, 2018），结合生活方式队列研究的 hazard ratio 进行维度加权。</p>
+          <p><strong>运动维度：</strong>WHO 身体活动指南（2020），每周 150-300 分钟中等强度运动。</p>
+          <p><strong>社交维度：</strong>Holt-Lunstad J 等，社会连接与死亡率前瞻性 Meta-analysis（Perspect Psychol Sci, 2015）。</p>
+          <p><strong>设计启发：</strong>课题组多维衰老指数研究（投稿 Lancet Healthy Longevity），强调衰老评估的维度特异性。</p>
+          <p style={{marginTop: 8, color: 'rgba(232,230,227,0.3)'}}>局限性：本工具使用自报数据，未经独立队列验证，结果仅供健康教育参考。</p>
+        </div>
+      )}
+    </div>
+  );
+};
