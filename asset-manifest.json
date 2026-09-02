@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chronos/static/css/main.87a350d8.css",
+    "main.js": "/chronos/static/js/main.2430f88a.js",
+    "static/js/453.71639a30.chunk.js": "/chronos/static/js/453.71639a30.chunk.js",
+    "index.html": "/chronos/index.html",
+    "main.87a350d8.css.map": "/chronos/static/css/main.87a350d8.css.map",
+    "main.2430f88a.js.map": "/chronos/static/js/main.2430f88a.js.map",
+    "453.71639a30.chunk.js.map": "/chronos/static/js/453.71639a30.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a350d8.css",
+    "static/js/main.2430f88a.js"
+  ]
+}
